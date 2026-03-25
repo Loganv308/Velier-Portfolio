@@ -3,11 +3,11 @@ import mediaflowLogo from "../assets/mediaflow.png";
 
 const projects = [
   {
-    type: "Web App",
+    type: "Back-end App",
     name: "MediaFlow",
     description:
       "MediaFlow is an automated media management tool that detects, optimizes, and re-encodes video files on your NAS. It ensures consistent H.265 encoding and 1080p resolution, streamlining your media library for efficient storage and playback.",
-    stack: ["Java", "Spring Boot", "React", "FFmpeg", "Docker"],
+    stack: ["Java", "Maven", "PostgreSQL", "FFmpeg"],
     accent: "bg-bark",
     logo: mediaflowLogo,
     link: "https://github.com/Loganv308/MediaFlow",

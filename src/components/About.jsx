@@ -10,15 +10,15 @@ const About = () => {
         <div className="grid md:grid-cols-[160px_1fr] gap-12 items-start">
           {/* Sidebar */}
           <div>
-            <div className="w-36 h-36 bg-sand border border-soft flex items-center justify-content-center mb-6">
-              <span className="font-serif text-4xl text-terra w-full text-center leading-[9rem]">LV</span>
+            <div className="w-46 h-46 overflow-hidden rounded-lg mb-6">
+              <img src="pfp.jpg" classname="w-full h-full object-cover object-center"></img>
             </div>
             <div className="space-y-2 text-sm">
               <p className="text-muted">
                 <span className="text-ink font-medium">Role</span> - Software Engineer - Document Composition
               </p>
               <p className="text-muted">
-                <span className="text-ink font-medium">Stack</span> — Java (REST API, Maven, Gradle), React, JavaScript, MySQL, SQLite, Docker, CI/CD, Linux
+                <span className="text-ink font-medium">Stack</span> — Java, React, JavaScript, MySQL, SQLite, Docker, CI/CD, Linux
               </p>
             </div>
           </div>
@@ -26,7 +26,7 @@ const About = () => {
           {/* Body */}
           <div className="space-y-4">
             <p className="font-serif italic text-ink text-lg leading-relaxed">
-              "I build web applications that are as satisfying to use as they are to build."
+              "I build software that feels as good to use as it does to create—crafting web applications that balance clean engineering with intuitive, satisfying user experiences."
             </p>
             <p className="text-muted leading-relaxed">
               Hi, I'm Logan Velier, a Software Engineer focused on building scalable web applications and continuously expanding my skill set. 

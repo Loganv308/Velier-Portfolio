@@ -18,8 +18,8 @@ const Hero = () => {
             <em className="text-terra not-italic">Velier</em>
           </h1>
           <p className="text-muted text-base leading-relaxed max-w-md mb-8">
-            Building thoughtful web applications with React, Node.js, and a love
-            for clean, purposeful code.
+            Building thoughtful web and back-end applications with React and Node.js, backed by experience across Java, Python, systems engineering, 
+            and data pipelines—focused on clean, purposeful code and creating tools that are as satisfying to use as they are to build.
           </p>
           <div className="flex gap-3 flex-wrap">
             <a
@@ -28,10 +28,7 @@ const Hero = () => {
             >
               View Projects
             </a>
-            <a
-              href="/resume.pdf"
-              className="border border-terra text-terra px-6 py-2.5 text-sm font-medium tracking-wide hover:bg-terra hover:text-white transition-colors duration-200"
-            >
+            <a href="resume.pdf" className="border border-terra text-terra px-6 py-2.5 text-sm font-medium tracking-wide hover:bg-terra hover:text-white transition-colors duration-200" download="resume.pdf">
               Download Resume
             </a>
           </div>
@@ -49,7 +46,7 @@ const Hero = () => {
           </div>
           <div className="bg-warm-white border border-soft px-5 py-4 w-56">
             <p className="text-xs uppercase tracking-widest text-muted mb-1">Based in</p>
-            <p className="font-serif text-ink text-lg">United States</p>
+            <p className="font-serif text-ink text-lg">Wisconsin, United States</p>
           </div>
         </div>
       </div>
