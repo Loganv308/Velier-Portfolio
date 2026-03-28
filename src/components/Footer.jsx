@@ -8,9 +8,9 @@ const Footer = () => {
         <span>© {new Date().getFullYear()} All rights reserved.</span>
         <div className="flex gap-6">
           {[
-            { label: "GitHub", href: "https://github.com" },
-            { label: "LinkedIn", href: "https://linkedin.com" },
-            { label: "Resume", href: "/resume.pdf" },
+            { label: "GitHub", href: "https://github.com/loganv308" },
+            { label: "LinkedIn", href: "https://www.linkedin.com/in/logan-velier/" },
+            { label: "Resume", href: "/Logan-Velier-Resume.pdf" },
           ].map((link) => (
             <a
               key={link.label}

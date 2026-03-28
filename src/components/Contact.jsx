@@ -24,14 +24,13 @@ const Contact = () => {
           {/* Left: info */}
           <div>
             <p className="text-muted leading-relaxed mb-6">
-              I'm currently open to new opportunities. Whether it's a project, a
-              role, or just a conversation — feel free to reach out.
+              I’m currently open to new opportunities, particularly remote software developer roles. Whether it’s a position, a project, or just a conversation—feel free to reach out.
             </p>
             <div className="space-y-3">
               {[
-                { label: "logan@example.com", href: "mailto:logan@example.com" },
-                { label: "LinkedIn", href: "https://linkedin.com" },
-                { label: "GitHub", href: "https://github.com" },
+                { label: "loganv308@gmail.com", href: "mailto:loganv308@gmail.com" },
+                { label: "LinkedIn", href: "https://www.linkedin.com/in/logan-velier/" },
+                { label: "GitHub", href: "https://github.com/loganv308" },
               ].map((link) => (
                 <a
                   key={link.label}

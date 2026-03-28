@@ -28,8 +28,8 @@ const Hero = () => {
             >
               View Projects
             </a>
-            <a href="resume.pdf" className="border border-terra text-terra px-6 py-2.5 text-sm font-medium tracking-wide hover:bg-terra hover:text-white transition-colors duration-200" download="resume.pdf">
-              Download Resume
+            <a href="Logan-Velier-Resume.pdf" className="border border-terra text-terra px-6 py-2.5 text-sm font-medium tracking-wide hover:bg-terra hover:text-white transition-colors duration-200">
+              View Resume
             </a>
           </div>
         </div>
@@ -38,7 +38,7 @@ const Hero = () => {
         <div className="flex flex-col gap-3 items-start md:items-end">
           <div className="bg-terra text-white px-5 py-4 w-56">
             <p className="text-xs uppercase tracking-widest text-white/70 mb-1">Currently focused on</p>
-            <p className="font-serif text-lg">Full-Stack Dev</p>
+            <p className="font-serif text-lg">Full-Stack Development</p>
           </div>
           <div className="bg-warm-white border border-soft px-5 py-4 w-56">
             <p className="text-xs uppercase tracking-widest text-muted mb-1">Open to</p>

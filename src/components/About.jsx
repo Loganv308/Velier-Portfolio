@@ -18,7 +18,7 @@ const About = () => {
                 <span className="text-ink font-medium">Role</span> - Software Engineer - Document Composition
               </p>
               <p className="text-muted">
-                <span className="text-ink font-medium">Stack</span> — Java, React, JavaScript, MySQL, SQLite, Docker, CI/CD, Linux
+                <span className="text-ink font-medium">Skills</span> — Java, React, JavaScript, MySQL, SQLite, Docker, CI/CD, Linux
               </p>
             </div>
           </div>

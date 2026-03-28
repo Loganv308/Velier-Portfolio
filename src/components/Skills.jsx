@@ -3,11 +3,11 @@ import React from "react";
 const skillGroups = [
   {
     name: "Frontend",
-    skills: ["React", "TypeScript", "Tailwind CSS", "HTML / CSS"],
+    skills: ["React", "TypeScript", "Tailwind CSS", "HTML"],
   },
   {
     name: "Backend",
-    skills: ["Java", "Maven", "Gradle", "Node.js", "Express", "REST APIs"],
+    skills: ["Java", "Maven", "Gradle", "Node.js", "REST APIs"],
   },
   {
     name: "Database",

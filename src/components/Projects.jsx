@@ -13,24 +13,24 @@ const projects = [
     link: "https://github.com/Loganv308/MediaFlow",
   },
   {
-    type: "API / Backend",
-    name: "Project Two",
+    type: "Data Pipeline",
+    name: "SIEM ETL Pipeline",
     description:
-      "A REST API with authentication and real-time features. Replace this with your actual project description.",
-    stack: ["Express", "MongoDB", "JWT"],
+      "A SIEM ETL Pipeline project focused on building a system that Extracts, Transforms, and Loads (ETL) security log data into a centralized platform for analysis and threat detection.",
+    stack: ["SIEM", "Security", "ETL", "Microsoft SQL", "Data Pipelining", "Logging"],
     accent: "bg-terra",
     initial: "P",
-    link: "#",
+    link: "https://github.com/Loganv308/SIEM-ETL-Pipeline",
   },
   {
-    type: "Tool",
-    name: "Project Three",
+    type: "Java Project",
+    name: "KittyCrawler",
     description:
-      "A developer tool or utility. Replace this with your actual project description.",
-    stack: ["TypeScript", "React", "Docker"],
+      "KittyCrawler is a Java-based application designed to scrape data from a local cat breeders’ website, monitoring for new entries. The project was developed as a hands-on exercise to deepen proficiency in Java, with a focus on key areas such as web scraping, object-oriented programming, algorithm design, and writing production-ready code.",
+    stack: ["Java", "OOP", "Authentication", "Web Scraping", "Maven"],
     accent: "bg-ember",
     initial: "P",
-    link: "#",
+    link: "https://github.com/Loganv308/KittyCrawler",
   },
 ];
 
