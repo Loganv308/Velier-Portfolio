@@ -13,7 +13,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="bg-warm-white px-6 py-20">
+    <section id="contact" className="bg-bg px-6 py-20">
       <div className="max-w-5xl mx-auto">
         <p className="text-xs uppercase tracking-[0.15em] text-terra font-medium mb-2">
           Get in touch

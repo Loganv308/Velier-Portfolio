@@ -21,7 +21,7 @@ const skillGroups = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="bg-cream px-6 py-20">
+    <section id="skills" className="bg-surface px-6 py-20">
       <div className="max-w-5xl mx-auto">
         <p className="text-xs uppercase tracking-[0.15em] text-terra font-medium mb-2">
           What I work with
@@ -30,7 +30,7 @@ const Skills = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {skillGroups.map((group) => (
-            <div key={group.name} className="bg-sand border border-soft p-5">
+            <div key={group.name} className="bg-bg border border-soft p-5">
               <p className="text-xs uppercase tracking-widest text-terra font-medium mb-3">
                 {group.name}
               </p>
@@ -38,7 +38,7 @@ const Skills = () => {
                 {group.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="text-xs bg-warm-white border border-soft text-bark px-2.5 py-1"
+                    className="text-xs bg-surface border border-soft text-bark px-2.5 py-1"
                   >
                     {skill}
                   </span>

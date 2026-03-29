@@ -7,15 +7,32 @@
   --font-sans: "DM Sans", sans-serif;
   --font-serif: "Lora", serif;
 
-  --color-cream: #FAF7F2;
-  --color-sand: #F0E8D8;
-  --color-soft: #D4B896;
-  --color-bark: #8B6340;
-  --color-terra: #C4622D;
-  --color-ember: #E8874A;
-  --color-ink: #2C1A0E;
-  --color-muted: #7A6555;
-  --color-warm-white: #FDFAF5;
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-text-main: var(--text);
+  --color-accent: var(--accent);
+
+  /* These need to map to your theme variables too */
+  --color-ink: var(--text);
+  --color-muted: color-mix(in srgb, var(--text) 60%, transparent);
+  --color-terra: var(--accent);
+
+  --color-bark: color-mix(in srgb, var(--accent) 80%, black);  /* darker accent */
+  --color-sand: color-mix(in srgb, var(--surface) 80%, var(--bg)); /* subtle input bg */
+  --color-soft: color-mix(in srgb, var(--text) 20%, transparent); /* faint border/placeholder */
+
+  --color-sand: color-mix(in srgb, var(--surface) 80%, var(--bg));
+  --color-warm-white: var(--surface);
+  --color-ember: var(--accent);
+  --color-bark: color-mix(in srgb, var(--accent) 80%, black);
+
+}
+
+:root {
+  --bg: #ffffff;
+  --surface: #f3f4f6;
+  --text: #111827;
+  --accent: #6366f1;
 }
 
 @layer base {

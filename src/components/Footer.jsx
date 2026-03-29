@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-ink text-white/50 px-6 py-8">
+    <footer className="bg-surface text-text-main/50 px-6 py-8">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
         <span className="font-serif text-ember text-base">Logan Velier</span>
         <span>© {new Date().getFullYear()} All rights reserved.</span>

@@ -28,7 +28,7 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="bg-cream px-6 py-20">
+    <section id="experience" className="bg-surface px-6 py-20">
       <div className="max-w-5xl mx-auto">
         <p className="text-xs uppercase tracking-[0.15em] text-terra font-medium mb-2">
           Where I've been

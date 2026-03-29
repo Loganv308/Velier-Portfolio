@@ -36,7 +36,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="bg-warm-white px-6 py-20">
+    <section id="projects" className="bg-surface px-6 py-20">
       <div className="max-w-5xl mx-auto">
         <p className="text-xs uppercase tracking-[0.15em] text-terra font-medium mb-2">
           What I've built
@@ -47,7 +47,7 @@ const Projects = () => {
           {projects.map((project) => (
             <div
               key={project.name}
-              className="bg-sand border border-soft overflow-hidden group hover:-translate-y-1 transition-transform duration-200"
+              className="bg-bg border border-soft overflow-hidden group hover:-translate-y-1 transition-transform duration-200"
             >
               {/* Thumbnail */}
               <div className={`relative ${project.accent} h-32 flex items-center justify-center`}>
@@ -71,7 +71,7 @@ const Projects = () => {
                   {project.stack.map((tech) => (
                     <span
                       key={tech}
-                      className="text-xs bg-warm-white border border-soft text-bark px-2 py-0.5"
+                      className="text-xs bg-surface border border-soft text-bark px-2 py-0.5"
                     >
                       {tech}
                     </span>

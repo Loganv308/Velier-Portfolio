@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section id="about" className="bg-warm-white px-6 py-20">
+    <section id="about" className="bg-surface px-6 py-20">
       <div className="max-w-5xl mx-auto">
         <p className="text-xs uppercase tracking-[0.15em] text-terra font-medium mb-2">Who I am</p>
         <h2 className="font-serif text-3xl text-ink mb-10">About Me</h2>
@@ -11,7 +11,7 @@ const About = () => {
           {/* Sidebar */}
           <div>
             <div className="w-46 h-46 overflow-hidden rounded-lg mb-6">
-              <img src="pfp.jpg" classname="w-full h-full object-cover object-center"></img>
+              <img src="pfp.jpg" className="w-full h-full object-cover object-center" />
             </div>
             <div className="space-y-2 text-sm">
               <p className="text-muted">

@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="bg-sand relative overflow-hidden px-6 py-20 md:py-28">
+    <section className="bg-bg relative overflow-hidden px-6 py-20 md:py-28">
       {/* Decorative circles */}
       <div className="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-ember opacity-10 pointer-events-none" />
       <div className="absolute left-1/2 -bottom-16 w-48 h-48 rounded-full bg-bark opacity-10 pointer-events-none" />
@@ -40,11 +40,11 @@ const Hero = () => {
             <p className="text-xs uppercase tracking-widest text-white/70 mb-1">Currently focused on</p>
             <p className="font-serif text-lg">Full-Stack Development</p>
           </div>
-          <div className="bg-warm-white border border-soft px-5 py-4 w-56">
+          <div className="bg-surface border border-soft px-5 py-4 w-56">
             <p className="text-xs uppercase tracking-widest text-muted mb-1">Open to</p>
             <p className="font-serif text-ink text-lg">New Opportunities</p>
           </div>
-          <div className="bg-warm-white border border-soft px-5 py-4 w-56">
+          <div className="bg-surface border border-soft px-5 py-4 w-56">
             <p className="text-xs uppercase tracking-widest text-muted mb-1">Based in</p>
             <p className="font-serif text-ink text-lg">Wisconsin, United States</p>
           </div>

@@ -12,7 +12,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 bg-warm-white border-b border-soft">
+    <nav className="sticky top-0 z-50 bg-surface border-b border-soft">
       <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
         <span className="font-serif text-terra text-xl tracking-wide">LV</span>
 
@@ -48,7 +48,7 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-warm-white border-t border-soft px-6 py-4 flex flex-col gap-4">
+        <div className="md:hidden bg-surface border-t border-soft px-6 py-4 flex flex-col gap-4">
           {links.map((l) => (
             <a
               key={l.label}
