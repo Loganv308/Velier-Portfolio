@@ -161,12 +161,14 @@ export function ThemePicker() {
           flex items-center gap-2 px-4 py-3 rounded-full shadow-xl
           font-medium text-sm transition-all duration-200
           hover:scale-105 active:scale-95
-          ${isOpen ? "ring-2 ring-white/40" : ""}
+          ${isOpen ? "ring-2 ring-white/40" : "ring-1 ring-black/10"}
         `}
         style={{
           background: themeStyles[activeTheme]["--surface"],
           color: themeStyles[activeTheme]["--text"],
-          boxShadow: `0 4px 20px ${themeStyles[activeTheme]["--bg"]}99`,
+          boxShadow: `0 4px 28px 4px ${themeStyles[activeTheme]["--accent"]}44`,
+          outline: `2px solid ${themeStyles[activeTheme]["--accent"]}66`,
+          outlineOffset: "2px",
         }}
         aria-label="Toggle theme picker"
       >

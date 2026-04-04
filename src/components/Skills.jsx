@@ -3,15 +3,15 @@ import React from "react";
 const skillGroups = [
   {
     name: "Frontend",
-    skills: ["React", "TypeScript", "Tailwind CSS", "HTML"],
+    skills: ["React", "Vite", "TypeScript", "Tailwind CSS", "HTML"],
   },
   {
     name: "Backend",
-    skills: ["Java", "Maven", "Gradle", "Node.js", "REST APIs"],
+    skills: ["Java", "Maven", "Gradle", "Node.js", "REST APIs", "Python"],
   },
   {
     name: "Database",
-    skills: ["PostgreSQL", "MySQL", "SQLite", "MongoDB"],
+    skills: ["PostgreSQL", "MySQL", "SQLite", "MongoDB", "Microsoft SQL"],
   },
   {
     name: "Tooling",

@@ -25,7 +25,6 @@
   --color-warm-white: var(--surface);
   --color-ember: var(--accent);
   --color-bark: color-mix(in srgb, var(--accent) 80%, black);
-
 }
 
 :root {
