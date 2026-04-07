@@ -1,6 +1,7 @@
 import React from "react";
 import mediaflowLogo from "../assets/mediaflow.png";
 import kittycrawlerLogo from "../assets/kittycrawler.png";
+import etlPipelineLogo from "../assets/ETL.png";
 
 const projects = [
   {
@@ -20,6 +21,7 @@ const projects = [
       "A SIEM ETL Pipeline project focused on building a system that Extracts, Transforms, and Loads (ETL) security log data into a centralized platform for analysis and threat detection.",
     stack: ["SIEM", "Security", "ETL", "Microsoft SQL", "Data Pipelining", "Logging"],
     accent: "bg-terra",
+    logo: etlPipelineLogo,
     link: "https://github.com/Loganv308/SIEM-ETL-Pipeline",
   },
   {

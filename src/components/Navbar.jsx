@@ -14,7 +14,13 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 bg-surface border-b border-soft">
       <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-        <span className="font-serif text-terra text-xl tracking-wide">LV</span>
+        <span className="
+          font-serif 
+          text-terra 
+          text-xl 
+          tracking-wide
+          shadow-xl
+        ">LV</span>
 
         {/* Desktop links */}
         <ul className="hidden md:flex gap-8">
