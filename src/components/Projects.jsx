@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import mediaflowLogo from "../assets/mediaflow.png";
 import kittycrawlerLogo from "../assets/kittycrawler.png";
 import etlPipelineLogo from "../assets/ETL.png";
+import portfolioLogo from "../assets/portfolio.png";
 
 const projects = [
   {
@@ -36,6 +37,17 @@ const projects = [
     accent: "bg-ember",
     logo: kittycrawlerLogo,
     link: "https://github.com/Loganv308/KittyCrawler",
+  },
+  {
+    type: "Front-end Project",
+    name: "Portfolio Website",
+    description:
+      "Velier.Dev is a personal developer portfolio website built with React. It showcases projects, skills, and contact information in a clean, modern, and responsive interface.",
+    stack: ["Javascript", "Frontend", "React", "Vite", "TailwindCSS", "HTML", "Node.js", "PostCSS"],
+    tags: ["Javascript", "Frontend", "React", "Node.js"],
+    accent: "bg-ember",
+    logo: portfolioLogo,
+    link: "https://github.com/Loganv308/Velier-Portfolio",
   },
 ];
 
