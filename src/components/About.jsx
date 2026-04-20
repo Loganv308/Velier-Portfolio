@@ -18,7 +18,7 @@ const About = () => {
                 <span className="text-ink font-medium">Role</span> - Software Engineer - Document Composition
               </p>
               <p className="text-muted">
-                <span className="text-ink font-medium">Skills</span> — Java, React, JavaScript, MySQL, SQLite, Docker, CI/CD, Linux
+                <span className="text-ink font-medium">Skills</span> — Java, React, JavaScript, SQL, SQLite, Docker, CI/CD, Linux, RAG Systems
               </p>
             </div>
           </div>
@@ -26,15 +26,16 @@ const About = () => {
           {/* Body */}
           <div className="space-y-4">
             <p className="font-serif italic text-ink text-lg leading-relaxed">
-              "I build software that feels as good to use as it does to create—crafting web applications that balance clean engineering with intuitive, satisfying user experiences."
+              "I design and build systems end-to-end: reliable backends, clean data pipelines, and interfaces that don't make people think twice."
             </p>
             <p className="text-muted leading-relaxed">
-              Hi, I'm Logan Velier, a Software Engineer focused on building scalable web applications and continuously expanding my skill set. 
-              I specialize in Java and Spring Boot for backend development and am actively growing my expertise in React and modern full-stack technologies.
+              Hi, I'm Logan Velier — a Software Engineer with a focus on building robust, scalable systems from the ground up. I specialize in backend development with Java and Python, designing APIs and services that are clean, maintainable, and built to last.
             </p>
             <p className="text-muted leading-relaxed">
-              I care deeply about the details—from designing clean, maintainable backend systems to creating intuitive user experiences. 
-              Outside of coding, I explore new technologies and look for ways to make software more efficient, reliable, and human-centered.
+              I'm drawn to the intersection of system design and real-world impact: how the decisions made at the architecture level ripple through to the end user. Whether it's optimizing a data flow, structuring a service layer, or building out a seamless UI, I care about getting it right — not just getting it done.
+            </p>
+            <p className="text-muted leading-relaxed">
+              Beyond the backend, I work across the full stack — architecting data pipelines and ETL workflows that move and transform information reliably, while also bringing that same attention to detail to the front end with React.
             </p>
           </div>
         </div>

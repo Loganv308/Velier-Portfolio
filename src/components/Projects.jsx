@@ -49,6 +49,17 @@ const projects = [
     logo: portfolioLogo,
     link: "https://github.com/Loganv308/Velier-Portfolio",
   },
+  {
+    type: "Full-Stack Project",
+    name: "TwitchChatAnalytics",
+    description:
+      "Velier.Dev is a personal developer portfolio website built with React. It showcases projects, skills, and contact information in a clean, modern, and responsive interface.",
+    stack: ["Javascript", "Frontend", "React", "Vite", "TailwindCSS", "HTML", "Node.js", "PostCSS"],
+    tags: ["Javascript", "Frontend", "React", "Node.js"],
+    accent: "bg-ember",
+    logo: portfolioLogo,
+    link: "https://github.com/Loganv308/Velier-Portfolio",
+  },
 ];
 
 const ALL_TAGS = ["All", ...Array.from(new Set(projects.flatMap((p) => p.tags)))];
