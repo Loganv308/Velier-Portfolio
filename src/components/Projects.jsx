@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import mediaflowLogo from "../assets/mediaflow.png";
 import kittycrawlerLogo from "../assets/kittycrawler.png";
 import etlPipelineLogo from "../assets/ETL.png";
-import portfolioLogo from "../assets/portfolio.png";
+import portfolioLogo from "../assets/velier-dev.png";
+import twitchBot from "../assets/TwitchAnalyticsBot.png";
 
 const projects = [
   {
@@ -11,9 +12,10 @@ const projects = [
     description:
       "MediaFlow is an automated media management tool that detects, optimizes, and re-encodes video files on your NAS. It ensures consistent H.265 encoding and 1080p resolution, streamlining your media library for efficient storage and playback.",
     stack: ["Java", "Maven", "PostgreSQL", "FFmpeg"],
-    tags: ["Backend", "Java"],
+    tags: ["Backend", "Java", "PostgreSQL"],
     accent: "bg-bark",
     logo: mediaflowLogo,
+    logoSize: "h-28 w-28",
     link: "https://github.com/Loganv308/MediaFlow",
   },
   {
@@ -21,10 +23,11 @@ const projects = [
     name: "ChatPipeline",
     description:
       "ChatPipeline connects to one or more Twitch channels via TwitchIO and listens to chat in real time. Each message passes through a sanitization pipeline before being batch-inserted into a PostgreSQL database every 2 seconds. It is designed to run continuously in the background, independently of any frontend or API layer.",
-    stack: ["ETL", "SQL", "Data Pipelining", "Supabase"],
-    tags: ["Data"],
+    stack: ["ETL", "SQL", "Data Pipelining", "PostgreSQL"],
+    tags: ["Data", "PostgreSQL"],
     accent: "bg-terra",
     logo: etlPipelineLogo,
+    logoSize: "h-28 w-28",
     link: "https://github.com/Loganv308/ChatPipeline",
   },
   {
@@ -36,6 +39,7 @@ const projects = [
     tags: ["Java", "Backend", "Authentication"],
     accent: "bg-ember",
     logo: kittycrawlerLogo,
+    logoSize: "h-28 w-28",
     link: "https://github.com/Loganv308/KittyCrawler",
   },
   {
@@ -43,22 +47,24 @@ const projects = [
     name: "Portfolio Website",
     description:
       "Velier.Dev is a personal developer portfolio website built with React. It showcases projects, skills, and contact information in a clean, modern, and responsive interface.",
-    stack: ["Javascript", "Frontend", "React", "Vite", "TailwindCSS", "HTML", "Node.js", "PostCSS"],
-    tags: ["Javascript", "Frontend", "React", "Node.js"],
+    stack: ["Javascript", "Frontend", "React", "Vite", "TailwindCSS", "HTML", "Node.js", "PostCSS", "NPM"],
+    tags: ["Frontend", "React", "Node.js"],
     accent: "bg-ember",
     logo: portfolioLogo,
+    logoSize: "h-50 w-50",
     link: "https://github.com/Loganv308/Velier-Portfolio",
   },
   {
     type: "Full-Stack Project",
     name: "TwitchChatAnalytics",
     description:
-      "Velier.Dev is a personal developer portfolio website built with React. It showcases projects, skills, and contact information in a clean, modern, and responsive interface.",
-    stack: ["Javascript", "Frontend", "React", "Vite", "TailwindCSS", "HTML", "Node.js", "PostCSS"],
-    tags: ["Javascript", "Frontend", "React", "Node.js"],
+      "TwitchAnalyticsBot is a real-time Twitch chat analytics platform consisting of two components — a Python data pipeline that collects and stores live chat messages from one or more Twitch channels into a PostgreSQL database, and a TypeScript/Node.js",
+    stack: ["Typescript", "Frontend", "TailwindCSS", "HTML", "Node.js", "PostCSS", "NPM"],
+    tags: ["Full-Stack", "Typescript", "Node.js", "PostgreSQL", "Frontend"],
     accent: "bg-ember",
-    logo: portfolioLogo,
-    link: "https://github.com/Loganv308/Velier-Portfolio",
+    logo: twitchBot,
+    logoSize: "h-60 w-60",
+    link: "https://github.com/Loganv308/TwitchAnalyticsBot",
   },
 ];
 
@@ -104,13 +110,13 @@ const Projects = () => {
               className="bg-bg border border-soft overflow-hidden group hover:-translate-y-1 transition-transform duration-200"
             >
               {/* Thumbnail */}
-              <div className={`relative ${project.accent} h-32 flex items-center justify-center`}>
+              <div className={`relative ${project.accent} h-40 flex items-center justify-center`}>
                 <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition" />
                 <div className="relative p-4 transition-transform duration-300 group-hover:scale-110">
                   <img
                     src={project.logo}
                     alt={`${project.name} logo`}
-                    className="h-20 w-20 object-contain drop-shadow-md"
+                    className={`${project.logoSize} object-contain drop-shadow-md`}
                   />
                 </div>
               </div>
