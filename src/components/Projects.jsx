@@ -5,7 +5,7 @@ import etlPipelineLogo from "../assets/ETL.png";
 import portfolioLogo from "../assets/velier-dev.png";
 import twitchBot from "../assets/TwitchAnalyticsBot.png";
 import loggingPlatform from "../assets/LoggingPlatform.png";
-import swiss from "../assets/swiss.png";
+import swiss from "../assets/Swiss.png";
 
 const projects = [
   {
