@@ -4,6 +4,8 @@ import kittycrawlerLogo from "../assets/kittycrawler.png";
 import etlPipelineLogo from "../assets/ETL.png";
 import portfolioLogo from "../assets/velier-dev.png";
 import twitchBot from "../assets/TwitchAnalyticsBot.png";
+import loggingPlatform from "../assets/LoggingPlatform.png";
+import swiss from "../assets/swiss.png";
 
 const projects = [
   {
@@ -24,7 +26,7 @@ const projects = [
     description:
       "ChatPipeline connects to one or more Twitch channels via TwitchIO and listens to chat in real time. Each message passes through a sanitization pipeline before being batch-inserted into a PostgreSQL database every 2 seconds. It is designed to run continuously in the background, independently of any frontend or API layer.",
     stack: ["ETL", "SQL", "Data Pipelining", "PostgreSQL"],
-    tags: ["Data", "PostgreSQL"],
+    tags: ["Data", "PostgreSQL", "Docker"],
     accent: "bg-terra",
     logo: etlPipelineLogo,
     logoSize: "h-28 w-28",
@@ -59,12 +61,36 @@ const projects = [
     name: "TwitchChatAnalytics",
     description:
       "TwitchAnalyticsBot is a real-time Twitch chat analytics platform consisting of two components — a Python data pipeline that collects and stores live chat messages from one or more Twitch channels into a PostgreSQL database, and a TypeScript/Node.js",
-    stack: ["Typescript", "Frontend", "TailwindCSS", "HTML", "Node.js", "PostCSS", "NPM"],
+    stack: ["Typescript", "TailwindCSS", "HTML", "Node.js", "PostCSS", "NPM"],
     tags: ["Full-Stack", "Typescript", "Node.js", "PostgreSQL", "Frontend"],
     accent: "bg-ember",
     logo: twitchBot,
     logoSize: "h-60 w-60",
     link: "https://github.com/Loganv308/TwitchAnalyticsBot",
+  },
+  {
+    type: "Full-Stack Project",
+    name: "Logging Platform",
+    description:
+      "A self-hosted log aggregation and viewing platform for home networks and internal services. Send logs from any service via HTTP and view them in a real-time web UI.",
+    stack: ["Typescript", "TailwindCSS", "HTML", "Node.js", "PostCSS", "NPM", "Docker"],
+    tags: ["Full-Stack", "Typescript", "Node.js", "PostgreSQL", "Frontend", "Docker"],
+    accent: "bg-ember",
+    logo: loggingPlatform,
+    logoSize: "h-60 w-60",
+    link: "https://github.com/Loganv308/LoggingPlatform",
+  },
+  {
+    type: "Back-end Project",
+    name: "Swiss - Discord Bot",
+    description:
+      "A full-featured Discord bot with message logging, moderation, music, and utilities — built with Node.js and PostgreSQL.",
+    stack: ["Javascript", "Node.js", "NPM", "Docker", "FFmpeg", "YtDlp"],
+    tags: ["Backend", "Node.js", "PostgreSQL", "Docker"],
+    accent: "bg-ember",
+    logo: swiss,
+    logoSize: "h-30 w-30",
+    link: "https://github.com/Loganv308/SwissArmyBot",
   },
 ];
 
