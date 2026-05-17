@@ -106,7 +106,7 @@ export function ThemePicker() {
   const current = themes.find((t) => t.id === activeTheme);
  
   return (
-    <div ref={ref} className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2">
+    <div ref={ref} className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2 pointer-events-none">
       {/* Theme list */}
       <div
         className={`
@@ -160,7 +160,7 @@ export function ThemePicker() {
         className={`
           flex items-center gap-2 px-4 py-3 rounded-full shadow-xl
           font-medium text-sm transition-all duration-200
-          hover:scale-105 active:scale-95
+          hover:scale-105 active:scale-95 pointer-events-auto
           ${isOpen ? "ring-2 ring-white/40" : "ring-1 ring-black/10"}
         `}
         style={{
