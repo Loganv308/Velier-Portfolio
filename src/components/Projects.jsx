@@ -6,6 +6,7 @@ import portfolioLogo from "../assets/velier-dev.png";
 import twitchBot from "../assets/TwitchAnalyticsBot.png";
 import loggingPlatform from "../assets/LoggingPlatform.png";
 import swiss from "../assets/Swiss.png";
+import dndiscord from "../assets/dndiscord.png"
 
 const projects = [
   {
@@ -91,6 +92,18 @@ const projects = [
     logo: swiss,
     logoSize: "h-30 w-30",
     link: "https://github.com/Loganv308/SwissArmyBot",
+  },
+  {
+    type: "Back-end Project",
+    name: "DNDiscord - Discord Bot",
+    description:
+      "A Discord bot built for tabletop RPG groups. It manages D&D character sheets, a multi-currency economy (platinum, gold, silver, copper), and a full item inventory system with rarity tiers, images, and hidden items for secret quests.",
+    stack: ["Javascript", "Node.js", "NPM", "Docker", "Discord.JS"],
+    tags: ["Backend", "Node.js", "PostgreSQL", "Docker"],
+    accent: "bg-ember",
+    logo: dndiscord,
+    logoSize: "h-30 w-30",
+    link: "https://github.com/Loganv308/DNDiscord",
   },
 ];
 
