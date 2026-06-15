@@ -6,7 +6,8 @@ import portfolioLogo from "../assets/velier-dev.png";
 import twitchBot from "../assets/TwitchAnalyticsBot.png";
 import loggingPlatform from "../assets/LoggingPlatform.png";
 import swiss from "../assets/Swiss.png";
-import dndiscord from "../assets/dndiscord.png"
+import dndiscord from "../assets/dndiscord.png";
+import wikilogo from "../assets/Wiki.png";
 
 const projects = [
   {
@@ -104,6 +105,18 @@ const projects = [
     logo: dndiscord,
     logoSize: "h-30 w-30",
     link: "https://github.com/Loganv308/DNDiscord",
+  },
+  {
+    type: "Full-Stack Project",
+    name: "AntonLabs - Wiki",
+    description:
+      "A self-hosted wiki that renders Obsidian-flavoured markdown, backed by PostgreSQL.",
+    stack: ["Javascript", "Node.js", "NPM", "Docker", "React", "Vite"],
+    tags: ["Full-Stack", "Node.js", "PostgreSQL", "Docker", "React", "Vite"],
+    accent: "bg-ember",
+    logo: wikilogo,
+    logoSize: "h-40 w-40",
+    link: "https://github.com/Loganv308/AntonLabs-Wiki",
   },
 ];
 
