@@ -11,7 +11,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="bg-bg relative overflow-hidden px-6 py-20 md:py-28" style={{ isolation: "isolate" }}>
+    <section className="bg-bg relative overflow-hidden px-6 py-10 md:py-18" style={{ isolation: "isolate" }}>
       {/* Decorative circles */}
       <div className="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-ember opacity-10 pointer-events-none" />
       <div className="absolute left-1/2 -bottom-16 w-48 h-48 rounded-full bg-bark opacity-10 pointer-events-none" />
@@ -27,7 +27,7 @@ const Hero = () => {
             <em className="text-terra not-italic">Velier</em>
           </h1>
           <p className="text-muted text-base leading-relaxed max-w-md mb-8">
-            Building thoughtful web and back-end applications with React and Node.js, backed by experience across Java, Python, systems engineering, 
+            Building thoughtful web and back-end applications with React and Node.js, backed by experience across C++, C#, Java, Python, systems engineering, 
             and data pipelines—focused on clean, purposeful code and creating tools that are as satisfying to use as they are to build.
           </p>
           <div className="flex flex-row gap-3 flex-wrap">

@@ -129,7 +129,7 @@ const Projects = () => {
     activeTag === "All" ? projects : projects.filter((p) => p.tags?.includes(activeTag));
 
   return (
-    <section id="projects" className="bg-surface px-6 py-20">
+    <section id="projects" className="bg-surface px-6 py-10">
       <div className="max-w-5xl mx-auto">
         <p className="text-xs uppercase tracking-[0.15em] text-terra font-medium mb-2">
           What I've built

@@ -21,7 +21,7 @@ const skillGroups = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="bg-surface px-6 py-20">
+    <section id="skills" className="bg-surface px-6 py-10">
       <div className="max-w-5xl mx-auto">
         <p className="text-xs uppercase tracking-[0.15em] text-terra font-medium mb-2">
           What I work with

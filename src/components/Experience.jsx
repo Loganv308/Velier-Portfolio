@@ -6,11 +6,11 @@ const experiences = [
     role: "Software Engineer - Document Composition",
     company: "Acuity Insurance",
     description: [
-      "Migrated legacy version control from CVS to GitLab, improving CI workflows and deployment reliability.",
-      "Automated data processing and release workflows, reducing manual operational effort.",
-      "Built dynamic document templates integrating XML and database sources into production-ready communications.",
-      "Developed ODBC integrations to ensure reliable backend data flow.",
-      "Maintained enterprise document systems using OpenText Exstream."
+      "Led migration of legacy version control system from CVS to GitLab, redesigning branching strategy and CI workflows to improve deployment reliability and developer collaboration.",
+      "Reduced manual operational effort by automating repetitive data processing and release tasks across development and production environments.",
+      "Developed dynamic document templates integrated into enterprise data pipelines, transforming structured data (XML/DB sources) into production-ready customer communications.",
+      "Designed and supported database integrations using ODBC, ensuring reliable data flow between backend systems and document rendering services.",
+      "Engineered and maintained enterprise document generation systems using OpenText Exstream, integrating XML templates with database-driven data pipelines."
     ],
   },
   {
@@ -28,7 +28,7 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="bg-surface px-6 py-20">
+    <section id="experience" className="bg-surface px-6 py-10">
       <div className="max-w-5xl mx-auto">
         <p className="text-xs uppercase tracking-[0.15em] text-terra font-medium mb-2">
           Where I've been
