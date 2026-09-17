@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { ThemePicker } from "./ThemePicker";
 
 const links = [
   { label: "About", href: "#about" },
@@ -52,41 +53,45 @@ const Navbar = () => {
           LV
         </a>
 
-        {/* Desktop links */}
-        <ul className="hidden md:flex gap-8">
-          {links.map((l) => (
-            <li key={l.label}>
-              <a
-                href={l.href}
-                className={`relative text-xs uppercase tracking-widest pb-1 transition-colors duration-200 ${
-                  activeId === l.href ? "text-terra" : "text-muted hover:text-terra"
-                }`}
-              >
-                {l.label}
-                <span
-                  className={`absolute left-0 -bottom-0.5 h-px bg-terra transition-all duration-300 ${
-                    activeId === l.href ? "w-full" : "w-0"
+        <div className="flex items-center gap-5">
+          {/* Desktop links */}
+          <ul className="hidden md:flex gap-8">
+            {links.map((l) => (
+              <li key={l.label}>
+                <a
+                  href={l.href}
+                  className={`relative text-xs uppercase tracking-widest pb-1 transition-colors duration-200 ${
+                    activeId === l.href ? "text-terra" : "text-muted hover:text-terra"
                   }`}
-                />
-              </a>
-            </li>
-          ))}
-        </ul>
+                >
+                  {l.label}
+                  <span
+                    className={`absolute left-0 -bottom-0.5 h-px bg-terra transition-all duration-300 ${
+                      activeId === l.href ? "w-full" : "w-0"
+                    }`}
+                  />
+                </a>
+              </li>
+            ))}
+          </ul>
 
-        {/* Mobile hamburger */}
-        <button
-          className="md:hidden text-muted hover:text-terra transition-transform duration-200 active:scale-90"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
-        >
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            {menuOpen ? (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
-            ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 6h16M4 12h16M4 18h16" />
-            )}
-          </svg>
-        </button>
+          <ThemePicker />
+
+          {/* Mobile hamburger */}
+          <button
+            className="md:hidden text-muted hover:text-terra transition-transform duration-200 active:scale-90"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle menu"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              {menuOpen ? (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 6h16M4 12h16M4 18h16" />
+              )}
+            </svg>
+          </button>
+        </div>
       </div>
 
       {/* Mobile menu */}

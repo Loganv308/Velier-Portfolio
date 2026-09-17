@@ -5,7 +5,7 @@ const themes = [
     id: "light",
     label: "Light",
     icon: "☀️",
-    preview: ["#ffffff", "#f3f4f6", "#111827"],
+    preview: ["#f7f5f1", "#efebe4", "#111827"],
   },
   {
     id: "dark",
@@ -52,7 +52,7 @@ const themes = [
 ];
  
 const themeStyles = {
-  light:    { "--bg": "#ffffff",  "--surface": "#f3f4f6", "--text": "#111827", "--accent": "#6366f1" },
+  light:    { "--bg": "#f7f5f1",  "--surface": "#efebe4", "--text": "#111827", "--accent": "#6366f1" },
   dark:     { "--bg": "#111827",  "--surface": "#1f2937", "--text": "#f9fafb", "--accent": "#818cf8" },
   cream:    { "--bg": "#fffdd0",  "--surface": "#fef9c3", "--text": "#713f12", "--accent": "#b45309" },
   forest:   { "--bg": "#14532d",  "--surface": "#166534", "--text": "#bbf7d0", "--accent": "#4ade80" },
@@ -105,13 +105,39 @@ export function ThemePicker() {
   const current = themes.find((t) => t.id === activeTheme);
  
   return (
-    <div ref={ref} className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2 pointer-events-none">
+    <div ref={ref} className="relative">
+      {/* Toggle button */}
+      <button
+        onClick={() => setIsOpen((prev) => !prev)}
+        className={`
+          flex items-center gap-1.5 px-3 py-1.5 rounded-full shadow-sm
+          font-medium text-xs transition-all duration-200
+          hover:scale-105 active:scale-95
+          ${isOpen ? "ring-2 ring-white/40" : "ring-1 ring-black/10"}
+        `}
+        style={{
+          background: themeStyles[activeTheme]["--surface"],
+          color: themeStyles[activeTheme]["--text"],
+          boxShadow: `0 2px 12px 2px ${themeStyles[activeTheme]["--accent"]}33`,
+        }}
+        aria-label="Toggle theme picker"
+      >
+        <span className="text-sm">{current?.icon}</span>
+        <span className="hidden lg:inline">{current?.label}</span>
+        <span
+          className="transition-transform duration-300 text-[10px] opacity-60"
+          style={{ transform: isOpen ? "rotate(180deg)" : "rotate(0deg)" }}
+        >
+          ▾
+        </span>
+      </button>
+
       {/* Theme list */}
       <div
         className={`
-          flex flex-col gap-1 mb-1
-          transition-all duration-300 ease-out origin-bottom-right
-          ${isOpen ? "opacity-100 scale-100 pointer-events-auto" : "opacity-0 scale-90 pointer-events-none"}
+          absolute right-0 mt-2 flex flex-col gap-1 z-50
+          transition-all duration-200 ease-out origin-top-right
+          ${isOpen ? "opacity-100 scale-100 pointer-events-auto" : "opacity-0 scale-95 pointer-events-none"}
         `}
       >
         {themes.map((theme) => (
@@ -152,34 +178,6 @@ export function ThemePicker() {
           </button>
         ))}
       </div>
- 
-      {/* Toggle button */}
-      <button
-        onClick={() => setIsOpen((prev) => !prev)}
-        className={`
-          flex items-center gap-2 px-4 py-3 rounded-full shadow-xl
-          font-medium text-sm transition-all duration-200
-          hover:scale-105 active:scale-95 pointer-events-auto
-          ${isOpen ? "ring-2 ring-white/40" : "ring-1 ring-black/10"}
-        `}
-        style={{
-          background: themeStyles[activeTheme]["--surface"],
-          color: themeStyles[activeTheme]["--text"],
-          boxShadow: `0 4px 28px 4px ${themeStyles[activeTheme]["--accent"]}44`,
-          outline: `2px solid ${themeStyles[activeTheme]["--accent"]}66`,
-          outlineOffset: "2px",
-        }}
-        aria-label="Toggle theme picker"
-      >
-        <span className="text-base">{current?.icon}</span>
-        <span className="hidden sm:inline">{current?.label}</span>
-        <span
-          className="transition-transform duration-300 text-xs opacity-60"
-          style={{ transform: isOpen ? "rotate(180deg)" : "rotate(0deg)" }}
-        >
-          ▲
-        </span>
-      </button>
     </div>
   );
 }

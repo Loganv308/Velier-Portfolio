@@ -21,7 +21,7 @@ const About = () => {
                 <span className="text-ink font-medium">Role</span> - Software Engineer - Document Composition
               </p>
               <p className="text-muted">
-                <span className="text-ink font-medium">Skills</span> — C++, C#, Java, JavaScript, React, Typescript, SQL, SQLite, PostgreSQL, Docker, CI/CD Pipelines, Linux, Networking, Systems Engineering.
+                <span className="text-ink font-medium">Skills</span> — C++, C#, Java, JavaScript, React, Typescript, SQL, SQLite, PostgreSQL, Docker, CI/CD, Linux, Networking, Security, Systems Engineering.
               </p>
             </div>
           </div>
@@ -29,19 +29,19 @@ const About = () => {
           {/* Body */}
           <div className="space-y-4">
             <p className="font-serif italic text-ink text-lg leading-relaxed">
-              "I design and build systems end-to-end: reliable backends, clean data pipelines, and interfaces that don't make people think twice."
+              "I design and build systems end-to-end—reliable backends, secure infrastructure, and interfaces that don't make people think twice."
             </p>
             <p className="text-muted leading-relaxed">
-              Hi, I'm Logan Velier — a Software Engineer focused on building reliable systems that turn structured data into things people actually use.
+              Hi, I'm Logan Velier — a Software Engineer who builds thoughtful, reliable systems, from the back end up to the interface someone actually clicks through.
             </p>
             <p className="text-muted leading-relaxed">
-              I specialize in backend and data pipeline engineering with Java, Python, and SQL, designing systems that take raw data — XML, database records — and transform it into something dependable and production-ready. At Acuity Insurance, I engineer enterprise document generation systems using OpenText Exstream, building dynamic templates that integrate with database-driven pipelines to produce real customer communications at scale.
+              I specialize in backend and systems engineering with Java, Python, and SQL, building software that's dependable and production-ready. At Acuity Insurance, I engineer enterprise document generation systems using OpenText Exstream, designing templates and integrations that produce real customer communications at scale.
             </p>
             <p className="text-muted leading-relaxed">
-              I'm drawn to the parts of engineering that don't always get the spotlight: solid CI/CD workflows, clean database integrations, infrastructure that just works. I led our migration from CVS to GitLab, redesigning branching strategy and CI pipelines to make deployments less painful and collaboration easier — the kind of unglamorous work that pays off every day after.
+              I'm drawn to the parts of engineering that don't always get the spotlight: solid CI/CD workflows, secure infrastructure, systems that just work. I led our migration from CVS to GitLab, redesigning branching strategy and automating deployments to make releases less painful and collaboration easier—the kind of unglamorous work that pays off every day after.
             </p>
             <p className="text-muted leading-relaxed">
-              Outside of work, I build full-stack projects that round out the picture — architecting a two-component analytics platform with a Python data pipeline and TypeScript API server, containerizing services with Docker for 24/7 self-hosted operation, and building React interfaces (like this site) with Tailwind CSS. I like the whole loop: from the data layer to the interface someone actually clicks through.
+              Outside of work, I build full-stack projects that round out the picture — architecting self-hosted tools with Python and TypeScript services, containerizing everything with Docker for 24/7 operation, and building React interfaces (like this site) with Tailwind CSS. I like the whole loop: from the back end up to the interface someone actually clicks through.
             </p>
           </div>
         </div>

@@ -22,7 +22,7 @@ const Footer = () => {
             <a
               key={link.label}
               href={link.href}
-              className="text-white/40 hover:text-ember hover:-translate-y-0.5 transition-all duration-200 inline-block"
+              className="text-muted hover:text-ember hover:-translate-y-0.5 transition-all duration-200 inline-block"
             >
               {link.label}
             </a>
