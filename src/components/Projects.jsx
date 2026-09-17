@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useReveal } from "../hooks/useReveal";
 import mediaflowLogo from "../assets/mediaflow.png";
 import kittycrawlerLogo from "../assets/kittycrawler.png";
 import etlPipelineLogo from "../assets/ETL.png";
@@ -124,13 +125,14 @@ const ALL_TAGS = ["All", ...Array.from(new Set(projects.flatMap((p) => p.tags)))
 
 const Projects = () => {
   const [activeTag, setActiveTag] = useState("All");
+  const [ref, isVisible] = useReveal();
 
   const filtered =
     activeTag === "All" ? projects : projects.filter((p) => p.tags?.includes(activeTag));
 
   return (
-    <section id="projects" className="bg-surface px-6 py-10">
-      <div className="max-w-5xl mx-auto">
+    <section id="projects" className="bg-surface px-6 py-16 md:py-24 scroll-mt-20">
+      <div ref={ref} className={`max-w-5xl mx-auto reveal ${isVisible ? "reveal-visible" : ""}`}>
         <p className="text-xs uppercase tracking-[0.15em] text-terra font-medium mb-2">
           What I've built
         </p>
@@ -156,10 +158,11 @@ const Projects = () => {
 
         {/* Project grid */}
         <div className="grid md:grid-cols-3 gap-5">
-          {filtered.map((project) => (
+          {filtered.map((project, i) => (
             <div
               key={project.name}
-              className="bg-bg border border-soft overflow-hidden group hover:-translate-y-1 transition-transform duration-200"
+              className="bg-bg border border-soft overflow-hidden group hover:-translate-y-1.5 hover:shadow-lg hover:border-terra/30 transition-all duration-200 animate-fade-up"
+              style={{ animationDelay: `${Math.min(i, 6) * 60}ms` }}
             >
               {/* Thumbnail */}
               <div className={`relative ${project.accent} h-40 flex items-center justify-center`}>

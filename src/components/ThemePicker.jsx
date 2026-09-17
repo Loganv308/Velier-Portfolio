@@ -62,32 +62,31 @@ const themeStyles = {
   sunset:   { "--bg": "#7c2d12",  "--surface": "#9a3412", "--text": "#fef3c7", "--accent": "#fb923c" },
 };
  
+function applyTheme(id) {
+  const vars = themeStyles[id];
+  if (!vars) return;
+  const root = document.documentElement;
+  Object.entries(vars).forEach(([k, v]) => root.style.setProperty(k, v));
+  // keep legacy .dark class for any dark: tailwind utilities
+  if (id === "dark" || id === "midnight" || id === "forest" || id === "ocean" || id === "sunset") {
+    root.classList.add("dark");
+  } else {
+    root.classList.remove("dark");
+  }
+  localStorage.setItem("theme", id);
+}
+
 export function ThemePicker() {
-  const [activeTheme, setActiveTheme] = useState("light");
+  const [activeTheme, setActiveTheme] = useState(() => localStorage.getItem("theme") || "light");
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef(null);
- 
-  // Apply theme variables to <html>
+
+  // Sync CSS vars to the initial theme on mount
   useEffect(() => {
-    const saved = localStorage.getItem("theme") || "light";
-    applyTheme(saved);
-    setActiveTheme(saved);
+    applyTheme(activeTheme);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
- 
-  function applyTheme(id) {
-    const vars = themeStyles[id];
-    if (!vars) return;
-    const root = document.documentElement;
-    Object.entries(vars).forEach(([k, v]) => root.style.setProperty(k, v));
-    // keep legacy .dark class for any dark: tailwind utilities
-    if (id === "dark" || id === "midnight" || id === "forest" || id === "ocean" || id === "sunset") {
-      root.classList.add("dark");
-    } else {
-      root.classList.remove("dark");
-    }
-    localStorage.setItem("theme", id);
-  }
- 
+
   function selectTheme(id) {
     setActiveTheme(id);
     applyTheme(id);

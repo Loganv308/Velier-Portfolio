@@ -1,9 +1,12 @@
 import React from "react";
+import { useReveal } from "../hooks/useReveal";
 
 const About = () => {
+  const [ref, isVisible] = useReveal();
+
   return (
-    <section id="about" className="bg-surface px-6 py-10">
-      <div className="max-w-5xl mx-auto">
+    <section id="about" className="bg-surface px-6 py-16 md:py-24 scroll-mt-20">
+      <div ref={ref} className={`max-w-5xl mx-auto reveal ${isVisible ? "reveal-visible" : ""}`}>
         <p className="text-xs uppercase tracking-[0.15em] text-terra font-medium mb-2">Who I am</p>
         <h2 className="font-serif text-3xl text-ink mb-10">About Me</h2>
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { useReveal } from "../hooks/useReveal";
 
 const experiences = [
   {
@@ -27,9 +28,11 @@ const experiences = [
 ];
 
 const Experience = () => {
+  const [ref, isVisible] = useReveal();
+
   return (
-    <section id="experience" className="bg-surface px-6 py-10">
-      <div className="max-w-5xl mx-auto">
+    <section id="experience" className="bg-surface px-6 py-16 md:py-24 scroll-mt-20">
+      <div ref={ref} className={`max-w-5xl mx-auto reveal ${isVisible ? "reveal-visible" : ""}`}>
         <p className="text-xs uppercase tracking-[0.15em] text-terra font-medium mb-2">
           Where I've been
         </p>
@@ -39,7 +42,7 @@ const Experience = () => {
           {experiences.map((exp) => (
             <div
               key={exp.role + exp.company}
-              className="grid md:grid-cols-[160px_1fr] gap-6 py-7"
+              className="grid md:grid-cols-[160px_1fr] gap-6 py-7 transition-colors duration-200 hover:bg-bg/50 -mx-4 px-4"
             >
               <p className="text-sm text-muted pt-0.5">{exp.date}</p>
               <div>
