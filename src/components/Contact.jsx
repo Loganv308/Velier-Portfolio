@@ -63,7 +63,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="bg-bg px-6 py-16 md:py-24 scroll-mt-20">
+    <section id="contact" className="bg-bg px-6 py-16 md:py-10 scroll-mt-20">
       <div ref={ref} className={`max-w-5xl mx-auto reveal ${isVisible ? "reveal-visible" : ""}`}>
         <p className="text-xs uppercase tracking-[0.15em] text-terra font-medium mb-2">
           Get in touch

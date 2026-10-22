@@ -20,18 +20,17 @@ const Hero = () => {
         {/* Left: Text */}
         <div className="relative z-10">
           <p className="text-xs uppercase tracking-[0.15em] text-terra font-medium mb-4 animate-fade-up" style={{ animationDelay: "0ms" }}>
-            Full-Stack Software Engineer
+            SOFTWARE ENGINEER · INFRASTRUCTURE & SECURITY
           </p>
           <h1 className="font-serif text-5xl md:text-6xl leading-tight text-ink mb-5 animate-fade-up" style={{ animationDelay: "80ms" }}>
             Logan<br />
             <em className="text-terra not-italic">Velier</em>
           </h1>
           <p className="text-muted text-base leading-relaxed max-w-md mb-6 animate-fade-up" style={{ animationDelay: "160ms" }}>
-            I build thoughtful web and back-end applications with React and Node.js, backed by a background in systems engineering and security, plus experience across C++, C#, Java, and Python.
-            I care about clean, purposeful code—and about creating tools that are as satisfying to use as they are to build.
+            I’m a software engineer who builds with security in mind. At Acuity Insurance, I engineer enterprise document systems and CI/CD workflows. Outside of work, I run a security homelab with SIEM monitoring, Active Directory, and automated hardening.
           </p>
           <div className="flex flex-wrap gap-2 mb-8 animate-fade-up" style={{ animationDelay: "220ms" }}>
-            {["Software Engineering", "Systems Engineering", "Security"].map((area) => (
+            {["Security Operations", "Software Engineering", "Detection & Monitoring"].map((area) => (
               <span
                 key={area}
                 className="text-xs uppercase tracking-widest font-medium text-terra border border-terra/30 bg-terra/5 px-3 py-1.5"
@@ -60,11 +59,11 @@ const Hero = () => {
         <div className="flex flex-col gap-3 items-start md:items-end relative z-0">
           <div className="bg-terra text-white px-5 py-4 w-60 animate-fade-up hover:-translate-y-0.5 transition-transform duration-200" style={{ animationDelay: "120ms" }}>
             <p className="text-xs uppercase tracking-widest text-white/70 mb-1">Currently focused on</p>
-            <p className="font-serif text-lg">Full-Stack Development</p>
+            <p className="font-serif text-lg">Cybersecurity</p>
           </div>
           <div className="bg-surface border border-soft px-5 py-4 w-60 animate-fade-up hover:-translate-y-0.5 transition-transform duration-200" style={{ animationDelay: "200ms" }}>
             <p className="text-xs uppercase tracking-widest text-muted mb-1">Open to</p>
-            <p className="font-serif text-ink text-lg">New Opportunities</p>
+            <p className="font-serif text-ink text-lg">Cybersecurity and Software Based Roles</p>
           </div>
           <div className="bg-surface border border-soft px-5 py-4 w-60 animate-fade-up hover:-translate-y-0.5 transition-transform duration-200" style={{ animationDelay: "280ms" }}>
             <p className="text-xs uppercase tracking-widest text-muted mb-1">Based in</p>

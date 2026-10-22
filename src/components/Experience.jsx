@@ -4,14 +4,15 @@ import { useReveal } from "../hooks/useReveal";
 const experiences = [
   {
     date: "2023 — Present",
-    role: "Software Engineer - Document Composition",
+    role: "Software Engineer I - Document Composition",
     company: "Acuity Insurance",
     description: [
-      "Led migration of legacy version control system from CVS to GitLab, redesigning branching strategy and CI workflows to improve deployment reliability and developer collaboration.",
-      "Reduced manual operational effort by automating repetitive data processing and release tasks across development and production environments.",
-      "Developed dynamic document templates integrated into enterprise data pipelines, transforming structured data (XML/DB sources) into production-ready customer communications.",
+      "Led migration of 4 large repositories containing multiple applications to GitLab for a 15-developer engineering team, redesigningbranching strategy and CI workflows to improve deployment reliability and collaboration.",
+      "Administered identity and access management for ~18 developers across GitLab, OpenText Exstream, and the production print Command Center job platform, provisioning and revoking access and assigning role-based, least-privilege permissions.",
+      "Built security controls into GitLab CI/CD pipelines (DevSecOps), adding automated checks and enforced approval gates so code reaching production is reviewed and validated.",
       "Designed and supported database integrations using ODBC, ensuring reliable data flow between backend systems and document rendering services.",
-      "Engineered and maintained enterprise document generation systems using OpenText Exstream, integrating XML templates with database-driven data pipelines."
+      "Engineered and maintained enterprise document generation systems using OpenText Exstream, integrating XML templates with database-driven data pipelines.",
+      "Maintained and extended Java repositories supporting Acuity’s enterprise print systems, implementing fixes and enhancements tokeep high-volume production print workflows reliable."
     ],
   },
   {
@@ -19,10 +20,10 @@ const experiences = [
     role: "Technical Support Analyst",
     company: "Acuity Insurance",
     description: [
-      "Managed assets for 1,000+ enterprise devices, improving inventory accuracy and lifecycle tracking",
-      "Collaborated in Agile/Scrum teams to deliver solutions aligned with business needs",
-      "Built automation scripts in PowerShell, Batch, and Python to streamline deployment, configuration, and reporting",
-      "Used SCCM to deploy standardized system images and enforce configuration policies",
+      "Provisioned enterprise laptops with Microsoft Intune and Windows Autopilot, applying security baseline templates and enforcing BitLocker full-disk encryption on every deployed device.",
+      "Partnered with the Information Security team to verify endpoints met security protocols before release to users.",
+      "Managed Group Policy and configuration baselines through SCCM, deploying standardized system images across the fleet.",
+      "Tracked asset inventory and lifecycle for 2,000+ enterprise devices, and wrote PowerShell, Batch, and Python automation for configuration, deployment, and reporting.",
     ],
   },
 ];
@@ -31,7 +32,7 @@ const Experience = () => {
   const [ref, isVisible] = useReveal();
 
   return (
-    <section id="experience" className="bg-surface px-6 py-16 md:py-24 scroll-mt-20">
+    <section id="experience" className="bg-surface px-6 py-16 md:py-6 scroll-mt-20">
       <div ref={ref} className={`max-w-5xl mx-auto reveal ${isVisible ? "reveal-visible" : ""}`}>
         <p className="text-xs uppercase tracking-[0.15em] text-terra font-medium mb-2">
           Where I've been

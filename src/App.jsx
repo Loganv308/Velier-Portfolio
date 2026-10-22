@@ -1,31 +1,36 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Experience from "./components/Experience";
-import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Homelab from "./pages/Homelab";
 import { useDarkMode } from './hooks/useDarkMode';
+import { useScrollToHash } from './hooks/useScrollToHash';
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/react"
+
+const AppRoutes = () => {
+  useScrollToHash();
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/homelab" element={<Homelab />} />
+    </Routes>
+  );
+};
 
 const App = () => {
   const [isDark, setIsDark] = useDarkMode();
   return (
-    <div className="min-h-screen bg-bg text-text-main transition-colors duration-300">
-      <Navbar isDark={isDark} toggleDark={() => setIsDark(prev => !prev)} />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Experience />
-      <Contact />
-      <Footer />
-      <Analytics />
-      <SpeedInsights />
-    </div>
+    <BrowserRouter>
+      <div className="min-h-screen bg-bg text-text-main transition-colors duration-300">
+        <Navbar isDark={isDark} toggleDark={() => setIsDark(prev => !prev)} />
+        <AppRoutes />
+        <Footer />
+        <Analytics />
+        <SpeedInsights />
+      </div>
+    </BrowserRouter>
   );
 };
 

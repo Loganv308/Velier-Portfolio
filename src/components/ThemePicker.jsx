@@ -77,7 +77,7 @@ function applyTheme(id) {
 }
 
 export function ThemePicker() {
-  const [activeTheme, setActiveTheme] = useState(() => localStorage.getItem("theme") || "light");
+  const [activeTheme, setActiveTheme] = useState(() => localStorage.getItem("theme") || "dark");
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef(null);
 
